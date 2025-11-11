@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: fcm-notification-server
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: FIREBASE_SERVICE_ACCOUNT_KEY
+        sync: false
+
